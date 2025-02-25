@@ -1,0 +1,873 @@
+/* Navigation Header */
+/* Header section */
+header {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Navigation bar */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+/* Logo Image */
+.logo img {
+    width: 120px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f8b400;
+}
+
+
+/* Get in touch button */
+.btn {
+    background-color: #f77d24;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+}
+
+.btn:hover {
+    background: #e06900;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Image */
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    opacity: 100%;
+}
+
+/* About Us Text */
+.hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 5rem;
+    font-weight:lighter;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-family:'Yesteryear';
+    margin-top:0% ;
+}
+.intro{
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    margin-top: 60%;
+    margin-bottom: 0%;
+}
+
+
+/* Tour Section */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Section Styling */
+.tour-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    /* margin: auto; */
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+/* Content Styling */
+.content {
+    max-width: 500px;
+}
+
+.promo-text {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #1d2d50;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff5733;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Image Container Styling */
+.image-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+/* Background Image */
+.bg-image {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* border-radius: 50%; */
+}
+
+/* Overlay Image */
+.circle-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid white;
+}
+
+.circle-image1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid white;
+}
+
+@media screen and (max-width: 768px) {
+    /* Navigation Header */
+    nav {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0px;
+    }
+
+    .hero {
+        font-size: 2.5rem;
+    }
+    
+    .hero-text{
+        position: absolute;
+        top:0%;
+        left: 1%;
+    }
+    #hdAboutUs{
+        font-size:2.5rem ;
+        text-align: left;
+    }
+
+    /* Tour Section */
+    .tour-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .circle-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .circle-image1 {
+        width: 250px;
+        height: 250px;
+    }
+   #Wonderlust{
+        background-image: url(Images/WonderlustBgrdImagesmall.png);
+        width:100%;
+        height: 220px; 
+        
+   }
+
+   #Trend{
+    width:100%;
+    max-height: 400px;
+   }
+
+    #shell{
+        max-width: 100px;
+        max-height: 50px;
+        
+        
+    } 
+    #AboutUsImage{
+        max-width: 200px;
+        max-height: 150px;
+    } 
+
+    #trendStat1,#trendStat2,#trendStat3{
+        max-width: 40px;
+        max-height: 43px;
+           
+        
+    }
+
+    
+    #subTrend,#subPromo{
+        color: red;
+        font-weight: 600;
+        font-size: xx-small;
+    }
+
+    #popularTour{
+        font-size:small;
+        color: black;
+        font-weight: 600;
+        margin-bottom: 0.5%;
+        /* padding-bottom: 2%; */
+    }
+
+    #TrendContent{
+        font-size:xx-small;
+        /* padding-bottom: 10%; */
+        
+    }
+    
+    #TrendContentHD{
+        position:absolute;
+        top: 23%;
+        left: 40%;
+        width:80%;
+        
+    }
+
+    #trendStat{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    #proReview{
+        margin-top:5%;
+        padding-top: 10%;
+        background-image: url(Images/testimonialbkgrdsmall.png);
+        width:100%;
+        height: 180px;
+    
+    
+
+   }
+
+   /* #divClientTestimonial{
+    font-size: xx-small;
+        
+   } */
+
+   #travelConcept{
+    width:15%;
+    height: 35%;
+    position: absolute;
+    bottom:0%;
+    left:0%
+    }
+
+    
+
+   #ClientsSay{
+    font-size: x-small;
+    font-weight: bold;
+   }
+
+    /* #testimonial{
+    width: 50%;
+    height: 60%;
+    margin-top: 1%;
+    } */
+
+    /* #clientTestimonial{
+        font-size: xx-small;
+        
+    } */
+
+    #divClientTestimonial{
+        background-color: white;
+        font-size:0.3rem;
+        width: 28%;
+        height: fit-content;
+        border-radius: 5%;
+        padding-top:1%;
+        position: absolute;
+        top:55%;
+        left:35%;
+        z-index: 0;
+    }
+
+    #clientProfile{
+        font-size: 0.3rem;
+        font-weight: bold;
+        /* position: absolute;
+        top:70%;
+        left:44%; */
+    }
+
+    .fa-quote-left{
+        font-size: small;
+        color: rgb(201, 194, 194);
+    }
+
+    #line{
+    width: 2%;
+    border:1px red solid;
+    position: absolute;
+    margin-top: 0.5%;
+    left:47%;
+    top:85%
+    }
+
+    #nav1,#nav2{
+        position: absolute;
+        top:63%;
+        z-index: 1;
+        width: 5%;
+    }
+
+    #nav1{
+        left:32.5%
+    }
+
+    #nav2{
+        left:60.5%
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .footer-column {
+        width: 100%;
+      }
+    
+      .social-icons {
+        justify-content: center;
+      }
+
+}
+
+@media screen and (min-width:769px){
+    #Wonderlust{
+        background-image: url(Images/WonderlustBgrdImage.png);
+        width:100%;
+        height: 400px;
+        
+    }
+ 
+    
+    #subTrend,#subPromo{
+        color: red;
+        font-weight: 600;
+        font-size: small;
+    }
+
+    #popularTour,#ClientsSay{
+        font-size:larger;
+        color: black;
+        font-weight: 600;
+        margin:auto;
+    }
+
+    #TrendContent{
+        width: 70%;
+        font-size: small;
+    }
+    
+    #TrendContentHD{
+        position:absolute;
+        top: 23%;
+        left: 40%;
+        width: 50%;
+    }
+
+    
+
+    #proReview{
+        margin-top:5%;
+        padding-top: 10%;
+        background-image:url(Images/testimonialbkgrd.png);
+        width: 100%;
+        height:350px;
+        
+        
+    }
+
+    #travelConcept{
+        width:15%;
+        height: 35%;
+        position: absolute;
+        bottom:0%;
+        left:0%
+    }
+
+    #ClientsSay{
+        font-size: x-large;
+        width:25%
+    }
+
+    /* #testimonial{
+        width: 25%;
+        height: 45%;
+        margin-top: 1%;
+    } */
+
+    #divClientTestimonial{
+        background-color: white;
+        font-size: x-small;
+        width: 28%;
+        height:25%;
+        border-radius: 5%;
+        position: absolute;
+        padding-top:1%;
+        top:55%;
+        left:35%;
+        z-index: 0;
+    }
+
+    .fa-quote-left{
+        font-size: xx-large;
+        color: rgb(201, 194, 194);
+    }
+
+    #clientProfile{
+        font-size: x-small;
+        font-weight: bold;
+        /* position: absolute;
+        top:75%;
+        left:45%; */
+    }
+
+    #nav1,#nav2{
+        position: absolute;
+        top:63%;
+        z-index: 1;
+        width: 5%;
+    }
+
+    #nav1{
+        left:32.5%
+    }
+
+    #nav2{
+        left:60.5%
+    }
+
+    #line{
+        width: 2%;
+        border:1px red solid;
+        position: absolute;
+        margin-top: 2%;
+        left:48.7%;
+        top:78%
+    }
+
+
+}
+
+/* Wonderlust Section */
+#Wonderlust,#proReview {
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+#WonderlustText{
+    width: 25%;
+    height: 15%;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    
+}
+
+#videoPlayIcon{
+    width: 4%;
+    height: 15%;
+    position: absolute;
+    top: 40%;
+    left: 49%;
+}
+
+/* Trend Section */
+
+#Trend{
+    width:100%;
+    height: 400px;
+    position: relative;
+    background-color: white;
+    background-size: cover;
+    
+}
+
+#AboutUsImage{
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    top:15%;
+    left: 15%;
+}
+
+#trendStat{
+    /* border:1px solid red; */
+    height:45%;
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left:40%;
+    margin-top: 5%;
+}
+
+#popularTour{
+    font-family: 'Times New Roman', Times, serif;
+}
+#trendStat1,#trendStat2,#trendStat3{
+    padding-left: 3%;
+      
+}
+
+/* #subTrend{
+    color: red;
+    font-weight: 600;
+    font-size: small;
+} */
+
+/* #popularTour{
+    font-size:larger;
+    color: black;
+    font-weight: 600;
+    margin:auto;
+} */
+
+#TrendContent{
+    width: 70%;
+    font-size: small;
+}
+
+#TrendContentHD{
+    position:absolute;
+    top: 23%;
+    left: 40%
+}
+
+#shell{
+    position: absolute;
+    top: 10%;
+    left:80%;
+    width: 150px;
+    height: 150px;
+}
+
+#trendStat1{
+    /* position: absolute;
+    top: 68%;
+    left:37%; */
+    width: 80px;
+    height: 90px;
+    /* width: 20%;
+    height: 90%; */
+    
+}
+#trendStat2{
+    /* position: absolute;
+    top: 68%;
+    left:48%; */
+    width: 80px;
+    height: 90px;
+    /* width: 20%;
+    height: 90%; */
+    
+}
+#trendStat3{
+    /* position: absolute;
+    top: 68%;
+    left:59.5%; */
+    width: 90px;
+    height: 93px;
+    /* width: 20%;
+    height: 90%; */
+    
+}
+
+/* Our International Packages */
+#exploreMore{
+    color:red;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 90px;
+    font-size: small;
+    font-weight: bold;
+}
+
+#ourIntlPackages{
+    color: 181E4B;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 7px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#grpImg{
+    
+    display: flex;
+    margin-top: 35px; 
+    width: 90%;
+    height: 40%;
+    justify-self: center;
+      
+
+}
+
+/* Promotion Review */
+#clientImg{
+    padding-top:7%;
+    width:8%;
+    height: 18%;
+    z-index: 1;
+    position: absolute;
+    top:30%;
+    left:45%;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: white;
+    padding: 40px 10%;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-column h2 {
+    font-size: 24px;
+    color: #1c1c1c;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .footer-column p {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #ff5733;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ff5733;
+  }
+  
+  .social-icons a:hover {
+    color: #666;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #e14b2e;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Background Image on Left Side */
+  .footer-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 300px; /* Adjust size as needed */
+    height: 100%;
+    background-image: url('Footer\ img.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    z-index: 1;
+    opacity: 0.9; 
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    padding-top: 15px; /* Adds space between the line and content */
+    border-top: 1px solid #ccc; /* This creates the line */
+    width: 100%;
+  }
+
+  /* @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-column {
+      width: 100%;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  } */
+  
+   
